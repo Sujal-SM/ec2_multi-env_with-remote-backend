@@ -1,10 +1,10 @@
-resource "aws_dynamodb_table" "aws-dynamodb-table" {
-  name             = "T-${var.bucket_name}-table"
-  hash_key         = "T-${var.hash-key}-Key"
-  billing_mode     = "ON_DEMAND"
+resource "aws_dynamodb_table" "terraform_locks" {
+  name         = "T-${var.bucket_name}-table"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "LockID"
 
   attribute {
-    name = "T-${var.hash-key}-key"
+    name = "LockID"
     type = "S"
   }
 }

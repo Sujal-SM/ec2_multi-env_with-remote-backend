@@ -5,7 +5,7 @@ variable "bucket_name" {
   
 }
 
-variable "hash-key" {
+variable "hash_key" {
   description = "The name of the hash key for DynamoDB table"
   type        = string
   default = "value-sujal"
