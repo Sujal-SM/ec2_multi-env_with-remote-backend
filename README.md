@@ -8,9 +8,13 @@ It is organized into **reusable modules**, **environment configs**, and **remote
 ## 📂 Repository Structure
 
 ├── env-modules/ # Reusable Terraform modules (dev,prd,stg)
+
 ├── main/ # Environment-specific configs (EC2)
+
 ├── remote-backend/ # Remote state configuration (S3, DynamoDB)
+
 ├── .gitignore
+
 └── README.md
 
 
