@@ -1,6 +1,6 @@
 resource "aws_key_pair" "key-pair" {
     key_name   = "my-key2-pair"
-    public_key = file("")
+    public_key = file("main/my-key2-pair.pub")
     tags = {
         Name = "my-key2-pair"
     }
