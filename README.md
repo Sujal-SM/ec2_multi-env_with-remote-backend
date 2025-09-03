@@ -38,6 +38,7 @@ terraform {
     dynamodb_table = "terraform-locks"
   }
 }
+```
 
 TO CLONE THIS REPO 
 USE - git clone https://github.com/Sujal-SM/ec2_multi-env_with-remote-backend.git
