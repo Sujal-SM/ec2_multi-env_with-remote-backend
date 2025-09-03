@@ -5,9 +5,7 @@ terraform {
       version = "6.11.0"
     }
   }
-}
 
-terraform {
   backend "s3" {
     bucket = "value-sujal-bucket-new" 
     key    = "env-modules/stg/terraform.tfstate"

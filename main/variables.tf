@@ -28,8 +28,14 @@ variable "instance_count" {
     type        = number 
 }
 
-variable "name" {
-    description = "Name tag for the EC2 instance"
+variable "env" {
+    description = "env for the EC2 instance"
+    type        = string
+  
+}
+
+variable "ec2_key_name" {
+    description = "Key name for the EC2 instance"
     type        = string
   
 }

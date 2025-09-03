@@ -5,13 +5,11 @@ terraform {
       version = "6.11.0"
     }
   }
-}
 
-terraform {
   backend "s3" {
     bucket = "value-sujal-bucket-new" 
     key    = "env-modules/dev/terraform.tfstate"
     region = "ap-south-1"
-    dynamodb_table = "T-value-sujal-bucket-new-table"
+    dynamodb_table = "T-value-sujal-bucket-table"
   }
 }

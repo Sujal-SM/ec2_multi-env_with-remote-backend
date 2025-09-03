@@ -1,8 +1,8 @@
 resource "aws_key_pair" "key-pair" {
-    key_name   = "my-key2-pair"
-    public_key = file("main/my-key2-pair.pub")
+    key_name   = "${var.ec2_key_name}-pair"
+    public_key = file("../../main/my-key-22.pub")
     tags = {
-        Name = "my-key2-pair"
+        Name = "${var.env}my-key2-pair"
     }
 }
 
@@ -56,6 +56,6 @@ resource "aws_instance" "my-ec2" {
     }
 
     tags = {
-        Name = "${var.name}my-ec2"
+        Name = "${var.env}-my-ec2"
     }
 }
