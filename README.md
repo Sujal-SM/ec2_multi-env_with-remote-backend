@@ -33,7 +33,7 @@ Inside `remote-backend/`, update the backend config with your own S3 bucket, Dyn
 terraform {
   backend "s3" {
     bucket         = "my-terraform-state"
-    key            = "dev/terraform.tfstate"
+    key            = "env-modules/dev/terraform.tfstate"
     region         = "ap-south-1"
     dynamodb_table = "terraform-locks"
   }
